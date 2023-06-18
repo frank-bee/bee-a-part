@@ -7,7 +7,7 @@
     <title>Honig-NFTs</title>
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css" rel="stylesheet">
 
     <style>
         body {
@@ -34,7 +34,7 @@
 <body>
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <a class="navbar-brand" href="#">Honig-NFTs</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
@@ -50,7 +50,7 @@
                 <a class="nav-link" href="#faq">FAQ</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#" data-toggle="modal" data-target="#contactModal">Kontakt</a>
+                <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#contactModal">Kontakt</a>
             </li>
         </ul>
     </div>
@@ -84,7 +84,7 @@
         </div>
     </div>
 
-    <div id="faqCarousel" class="carousel slide mt-3" data-ride="carousel">
+    <div id="faqCarousel" class="carousel slide mt-3" data-bs-ride="carousel" id="faq">
         <div class="carousel-inner">
             <div class="carousel-item active">
                 <div class="carousel-caption">
@@ -100,11 +100,11 @@
             </div>
             <!-- Add more items as needed -->
         </div>
-        <a class="carousel-control-prev" href="#faqCarousel" role="button" data-slide="prev">
+        <a class="carousel-control-prev" href="#faqCarousel" role="button" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="sr-only">Previous</span>
         </a>
-        <a class="carousel-control-next" href="#faqCarousel" role="button" data-slide="next">
+        <a class="carousel-control-next" href="#faqCarousel" role="button" data-bs-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="sr-only">Next</span>
         </a>
@@ -116,7 +116,7 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <h1 class="modal-title" id="contactModalLabel">Kontakt</h1>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
@@ -137,7 +137,7 @@
                     </form>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Schließen</button>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Schließen</button>
                     <button type="button" class="btn btn-primary">Nachricht senden</button>
                 </div>
             </div>
@@ -145,10 +145,9 @@
     </div>
 </div>
 
-<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<!-- Bootstrap JS and Popper.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.3/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/js/bootstrap.min.js"></script>
 </body>
 
 </html>
